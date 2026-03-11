@@ -1,209 +1,91 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
 body{
-
+margin:0;
+font-family:Arial;
 background:black;
 color:white;
-overflow-x:hidden;
-
 }
 
-
-/* NAVBAR */
-
 .nav{
-
 display:flex;
 justify-content:space-between;
-align-items:center;
 background:#111;
-padding:10px 20px;
-position:sticky;
-top:0;
-
+padding:10px;
 }
 
 .nav h1{
-
 color:orange;
-text-shadow:0 0 10px orange;
-
 }
 
 .nav a{
-
 color:white;
 margin:10px;
 text-decoration:none;
-font-weight:bold;
-
 }
-
-.nav a:hover{
-
-color:orange;
-
-}
-
-
-
-/* HOME */
 
 .home{
-
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
-background:linear-gradient(
-45deg,
-black,
-orange,
-black
-);
-
-animation:bgmove 6s infinite alternate;
-
+text-align:center;
+padding:100px;
+background:#000;
 }
-
-
-@keyframes bgmove{
-
-0%{filter:hue-rotate(0);}
-100%{filter:hue-rotate(40deg);}
-
-}
-
-
-.home h2{
-
-font-size:40px;
-color:orange;
-text-shadow:0 0 20px orange;
-
-}
-
 
 .btn{
-
-margin-top:20px;
-padding:10px 20px;
 background:orange;
 border:none;
-cursor:pointer;
-font-size:16px;
-
-transition:0.3s;
-
+padding:10px;
 }
-
-.btn:hover{
-
-background:black;
-color:orange;
-border:1px solid orange;
-
-}
-
-
-
-/* SECTIONS */
 
 section{
-
-padding:50px;
+padding:40px;
 text-align:center;
-
 }
 
-
-
-/* CARD */
-
-.card{
-
-border:1px solid orange;
-width:200px;
-margin:auto;
-padding:20px;
-
-box-shadow:0 0 10px orange;
-
-}
-
-
-
-/* GALLERY */
-
-.gallery{
-
+.compare{
 display:flex;
 justify-content:center;
 gap:20px;
 flex-wrap:wrap;
-
 }
 
-.box{
-
-width:120px;
-height:120px;
-background:orange;
-
-animation:spin 5s linear infinite;
-
+.cmp{
+border:1px solid orange;
+padding:20px;
+width:200px;
+background:#111;
 }
 
-
-@keyframes spin{
-
-from{transform:rotate(0);}
-to{transform:rotate(360deg);}
-
+.gallery{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
 }
 
-
-
-/* FORM */
+.gcard{
+width:150px;
+height:100px;
+background:#111;
+border:1px solid orange;
+display:flex;
+align-items:center;
+justify-content:center;
+}
 
 input{
-
 padding:10px;
 margin:5px;
-
 }
-
-button{
-
-padding:10px;
-background:orange;
-border:none;
-
-}
-
-
-
-/* WHATSAPP */
 
 .whatsapp{
-
 position:fixed;
 bottom:20px;
 right:20px;
-
 background:green;
 padding:10px;
-
 color:white;
-text-decoration:none;
+}
 
-box-shadow:0 0 10px green;
-
+footer{
+background:#111;
+text-align:center;
+padding:20px;
 }
