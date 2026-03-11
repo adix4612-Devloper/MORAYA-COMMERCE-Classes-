@@ -1,55 +1,209 @@
-body {
-    margin: 0;
-    font-family: Arial;
-    background: black;
-    color: white;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
 }
 
-header {
-    background: orange;
-    padding: 20px;
-    text-align: center;
+body{
+
+background:black;
+color:white;
+overflow-x:hidden;
+
 }
 
-nav {
-    background: #111;
-    padding: 10px;
-    text-align: center;
+
+/* NAVBAR */
+
+.nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111;
+padding:10px 20px;
+position:sticky;
+top:0;
+
 }
 
-nav a {
-    color: orange;
-    margin: 10px;
-    text-decoration: none;
+.nav h1{
+
+color:orange;
+text-shadow:0 0 10px orange;
+
 }
 
-.hero {
-    padding: 100px;
-    text-align: center;
-    background: linear-gradient(black, orange);
+.nav a{
+
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+
 }
 
-section {
-    padding: 40px;
+.nav a:hover{
+
+color:orange;
+
 }
 
-form input {
-    padding: 10px;
-    margin: 5px;
+
+
+/* HOME */
+
+.home{
+
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(
+45deg,
+black,
+orange,
+black
+);
+
+animation:bgmove 6s infinite alternate;
+
 }
 
-button {
-    background: orange;
-    border: none;
-    padding: 10px;
+
+@keyframes bgmove{
+
+0%{filter:hue-rotate(0);}
+100%{filter:hue-rotate(40deg);}
+
 }
 
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: green;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
+
+.home h2{
+
+font-size:40px;
+color:orange;
+text-shadow:0 0 20px orange;
+
+}
+
+
+.btn{
+
+margin-top:20px;
+padding:10px 20px;
+background:orange;
+border:none;
+cursor:pointer;
+font-size:16px;
+
+transition:0.3s;
+
+}
+
+.btn:hover{
+
+background:black;
+color:orange;
+border:1px solid orange;
+
+}
+
+
+
+/* SECTIONS */
+
+section{
+
+padding:50px;
+text-align:center;
+
+}
+
+
+
+/* CARD */
+
+.card{
+
+border:1px solid orange;
+width:200px;
+margin:auto;
+padding:20px;
+
+box-shadow:0 0 10px orange;
+
+}
+
+
+
+/* GALLERY */
+
+.gallery{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.box{
+
+width:120px;
+height:120px;
+background:orange;
+
+animation:spin 5s linear infinite;
+
+}
+
+
+@keyframes spin{
+
+from{transform:rotate(0);}
+to{transform:rotate(360deg);}
+
+}
+
+
+
+/* FORM */
+
+input{
+
+padding:10px;
+margin:5px;
+
+}
+
+button{
+
+padding:10px;
+background:orange;
+border:none;
+
+}
+
+
+
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+background:green;
+padding:10px;
+
+color:white;
+text-decoration:none;
+
+box-shadow:0 0 10px green;
+
 }
